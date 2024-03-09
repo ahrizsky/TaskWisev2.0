@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [TaskWise](#taskwise)
-  - [Github Management](#github-management)
+  - [Updating and working on the latest project](#updating-and-working-on-the-latest-project)
   - [Using Version Control](#using-version-control)
   - [Pushing your changes](#pushing-your-changes)
 
