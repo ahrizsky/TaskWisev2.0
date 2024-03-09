@@ -19,9 +19,9 @@
 
 ### Create new feature branch
 
-| Select new branch from origin/(name of branch) | Rename the new branch |
+| Select new branch from origin/(name of branch) | Name the new branch |
 |------------------------------------------------|------------------------|
-| ![Select new branch from origin/(name of branch)](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/4269b150-11b1-402e-8439-91bdd08c0b8b) | ![Rename the new branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/27ca0128-e524-4b5d-abff-2319410afa7c) |
+| ![Select new branch from origin/(name of branch)](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/4269b150-11b1-402e-8439-91bdd08c0b8b) | ![Name the new branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/27ca0128-e524-4b5d-abff-2319410afa7c) |
 
 
 ### Work on the new local branch
