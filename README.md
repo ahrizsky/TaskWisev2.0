@@ -26,11 +26,9 @@
 
 ### Work on the new local branch
 
-| Checkout branch to make sure you're not working on another branch | You can check on Git your current branch |
+| Checkout branch to make sure you're not working on another branch | This logo means your current branch |
 |-------------------------------------------------------------------|------------------------------------------|
-| ![Checkout branch to make sure you're not working on another branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/a31092c5-15cf-47f3-9855-d5fec20a8fb6) | ![You can check on Git your current branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/90c9c530-4015-4d02-b68c-44606f50fa36) |
-
-If you don't have git, you can download it [here](https://git-scm.com/downloads).
+| ![Checkout branch to make sure you're not working on another branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/a31092c5-15cf-47f3-9855-d5fec20a8fb6) | ![This logo means your current branch](https://github.com/ahrizsky/TaskWisev2.0/assets/114125147/bd82c75f-0962-456f-a37a-4ad276201bb8) |
 
 ### Start Working on the Latest Update
 
