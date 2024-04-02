@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "TaskWiseRebirth"
 include ':app'
+include ':CubismCore'
+
+include ':Framework:framework'
+include ':visualModel'

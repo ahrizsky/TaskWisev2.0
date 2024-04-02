@@ -1,15 +1,33 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TaskWiseRebirth" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:fontFamily">@font/inter</item>
-    </style>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="Theme.TaskWiseRebirth" parent="Base.Theme.TaskWiseRebirth" />
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TaskWiseRebirth" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Remove customization of light theme here. -->
+        <item name="android:fontFamily">@font/inter</item>
+
+<!--        Theme.MaterialComponents.Light.NoActionBar.Bridge-->
+
+    </style>
 
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/gray3</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.TaskWiseRebirth" parent="Base.Theme.TaskWiseRebirth" />
 </resources>

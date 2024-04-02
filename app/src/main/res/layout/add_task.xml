@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbkg"
+    android:elevation="6dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="64dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center|top"
+        app:layout_constraintBottom_toTopOf="@+id/txtTaskName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_thingy" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Task Name -->
+        <TextView
+            android:id="@+id/txtTaskName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Task Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Edit Task -->
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_task_text"
+            android:hint="Enter task name"
+            android:padding="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTaskName" />
+
+        <!-- Importance -->
+        <TextView
+            android:id="@+id/txtImportance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Importance"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taskName" />
+
+
+        <Spinner
+            android:id="@+id/importance"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_spinner_arrow"
+            android:prompt="@string/select_prompt"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImportance"
+
+            />
+
+        <!-- Urgency -->
+        <TextView
+            android:id="@+id/txtUrgency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Urgency"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/taskName" />
+
+        <!-- Name3 -->
+        <Spinner
+            android:id="@+id/urgency"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_spinner_arrow"
+            android:prompt="@string/select_prompt"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/txtUrgency" />
+
+        <!-- Deadline Label -->
+        <TextView
+            android:id="@+id/DeadlineLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Deadline"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/urgency" />
+
+        <!-- Deadline EditText -->
+
+        <EditText
+            android:id="@+id/deadline"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_task_text"
+            android:focusable="false"
+            android:hint="No deadline"
+            android:padding="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DeadlineLabel" />
+
+
+        <!-- Duration Label -->
+        <ImageView
+            android:id="@+id/calendarIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/deadline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deadline"
+            app:srcCompat="@drawable/calendar_month" />
+
+        <TextView
+            android:id="@+id/DurationLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Duration"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deadline" />
+
+        <!-- Duration EditText -->
+        <EditText
+            android:id="@+id/duration"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_task_text"
+            android:hint="Set duration"
+            android:padding="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DurationLabel" />
+
+        <!-- Recurrence Label -->
+        <TextView
+            android:id="@+id/RecurrenceLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Recurrence"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/deadline" />
+
+        <!-- Recurrence EditText -->
+        <Spinner
+            android:id="@+id/recurrence"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_spinner_arrow"
+            android:padding="8dp"
+            android:prompt="@string/none_prompt"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/RecurrenceLabel" />
+
+        <!-- Schedule Label -->
+        <TextView
+            android:id="@+id/ScheduleLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Schedule"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recurrence" />
+
+        <!-- Schedule EditText -->
+        <EditText
+            android:id="@+id/schedule"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_task_text"
+            android:hint="None"
+            android:padding="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ScheduleLabel" />
+
+        <!-- Remind Me CheckBox -->
+        <CheckBox
+            android:id="@+id/reminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Remind Me"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/recurrence" />
+
+        <!-- Notes Label -->
+        <TextView
+            android:id="@+id/NotesLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingLeft="16dp"
+            android:text="Notes"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reminder" />
+
+        <!-- Notes EditText -->
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/add_task_text"
+            android:padding="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NotesLabel" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_button_shape"
+            android:fontFamily="@font/inter_bold"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notes" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

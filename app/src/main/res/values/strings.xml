@@ -1,23 +1,33 @@
 <resources>
-    <string name="app_name">TaskWiseRebirth</string>
-    <string name="Taskwise_Logo">Taskwise Logo</string>
-    <string name="taskwise_logo">Taskwise Logo</string>
-    <string name="login_for_authentication">Login for authentication</string>
-    <string name="log_in">LOG IN</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="log_in1">LOG IN</string>
-    <string name="remove">remove</string>
-    <string name="create_account">CREATE ACCOUNT</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="i_agree_to_the_terms_conditions_and_privacy_policy">I agree to the Terms Conditions and Privacy Policy</string>
-    <string name="create_account2">CREATE ACCOUNT</string>
-    <string name="month">month</string>
-    <string name="week">week</string>
-    <string name="today">today</string>
-    <string name="home_2">home_2</string>
-    <string name="notifi">notifi</string>
-    <string name="logout_2">logout_2</string>
-    <string name="confirm_password1">Confirm Password</string>
+    <string name="app_name">TASKWISE_V3</string>
+    <string name="taskwiselogo">TaskwiseLogo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="mic">mic</string>
+    <string name="select">Select Item</string>
+    <string name="select_prompt" >Select</string>
+    <string name="none_prompt" >None</string>
 
+    <string-array name="importance_array">
+        <item>@string/select_prompt</item>
+        <item>Very Important</item>
+        <item>Important</item>
+        <item>Somewhat Important</item>
+        <item>Not Important</item>
+    </string-array>
+
+    <string-array name="urgency_array">
+        <item>@string/select_prompt</item>
+        <item>Very Urgent</item>
+        <item>Urgent</item>
+        <item>Somewhat Urgent</item>
+        <item>Not Urgent</item>
+    </string-array>
+
+    <string-array name="recurrence_array">
+    <item>@string/none_prompt</item>
+    <item>Daily</item>
+    <item>Specific Days</item>
+    </string-array>
 </resources>

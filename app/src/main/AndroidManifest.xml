@@ -12,12 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskWiseRebirth"
         tools:targetApi="31">
+
         <activity
-            android:name=".Register_Activity"
+            android:name=".BeforeLogin"
             android:exported="false" />
         <activity
-            android:name=".Login_Activity"
-            android:exported="false" />
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,5 +31,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
